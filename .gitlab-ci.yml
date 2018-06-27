@@ -37,7 +37,7 @@ build:
     go version
     go env
     cd /go/src/github.com/crankykernel/maker
-    (cd webapp && make install-deps)
+    make install-deps
     GOOS=linux GOARCH=amd64 make dist
     CC=x86_64-w64-mingw32-gcc GOOS=windows GOARCH=amd64 make dist
     CC=i686-w64-mingw32-gcc GOOS=windows GOARCH=386 make dist
